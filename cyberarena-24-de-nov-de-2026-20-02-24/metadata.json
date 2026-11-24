@@ -1,0 +1,9 @@
+{
+  "name": "Cyber Arena: Bot Survival",
+  "description": "Dodge the chaos. Upgrade your bot. Own the arena.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "version": "1.7.0"
+}

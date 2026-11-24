@@ -1,0 +1,64 @@
+{
+  "$schema": "https://bridge.playgama.com/v2/stable/schema.json",
+  "platforms": {
+    "facebook": {
+      "sendAnalyticsEvents": false
+    },
+    "yandex": {
+      "sendAnalyticsEvents": false
+    },
+    "youtube": {
+      "sendAnalyticsEvents": false
+    }
+  },
+  "advertisement": {
+    "minimumDelayBetweenInterstitial": 60,
+    "interstitial": {
+      "disable": false,
+      "preloadOnStart": "game_over",
+      "placementFallback": "game_over",
+      "placements": [
+        {
+          "id": "game_over"
+        },
+        {
+          "id": "return_to_menu"
+        }
+      ]
+    },
+    "rewarded": {
+      "disable": false,
+      "preloadOnStart": "revive",
+      "placementFallback": "revive",
+      "placements": [
+        {
+          "id": "revive"
+        },
+        {
+          "id": "double_scrap"
+        }
+      ]
+    },
+    "useBuiltInErrorPopup": true
+  },
+  "sendAnalyticsEvents": true,
+  "saas": {
+    "publicToken": "cmwlhbm030yzak00h71xnc8sm",
+    "leaderboards": {
+      "platforms": [
+        "playgama",
+        "qa_tool"
+      ]
+    }
+  },
+  "leaderboards": [
+    {
+      "id": "survival_time",
+      "isMain": true
+    },
+    {
+      "id": "boss_attempts",
+      "isMain": false
+    }
+  ]
+}
